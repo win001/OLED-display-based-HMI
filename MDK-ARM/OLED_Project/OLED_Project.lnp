@@ -1,0 +1,27 @@
+--cpu Cortex-M3
+"oled_medicaid\startup_stm32f103xb.o"
+"oled_medicaid\fonts.o"
+"oled_medicaid\ssd1306.o"
+"oled_medicaid\test.o"
+"oled_medicaid\main.o"
+"oled_medicaid\stm32f1xx_it.o"
+"oled_medicaid\stm32f1xx_hal_msp.o"
+"oled_medicaid\stm32f1xx_hal_gpio_ex.o"
+"oled_medicaid\stm32f1xx_hal_i2c.o"
+"oled_medicaid\stm32f1xx_hal.o"
+"oled_medicaid\stm32f1xx_hal_rcc.o"
+"oled_medicaid\stm32f1xx_hal_rcc_ex.o"
+"oled_medicaid\stm32f1xx_hal_gpio.o"
+"oled_medicaid\stm32f1xx_hal_dma.o"
+"oled_medicaid\stm32f1xx_hal_cortex.o"
+"oled_medicaid\stm32f1xx_hal_pwr.o"
+"oled_medicaid\stm32f1xx_hal_flash.o"
+"oled_medicaid\stm32f1xx_hal_flash_ex.o"
+"oled_medicaid\stm32f1xx_hal_exti.o"
+"oled_medicaid\stm32f1xx_hal_tim.o"
+"oled_medicaid\stm32f1xx_hal_tim_ex.o"
+"oled_medicaid\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "OLED_Medicaid\OLED_Medicaid.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "OLED_Medicaid.map" -o OLED_Medicaid\OLED_Medicaid.axf
